@@ -16,3 +16,6 @@ div:nth-of-type(4){
 div:nth-of-type(5){
     color: rgb(236, 154, 86);
 }
+h3{
+    font-family: sans-serif;
+}
