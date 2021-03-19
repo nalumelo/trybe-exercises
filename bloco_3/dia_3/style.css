@@ -9,6 +9,7 @@ div:nth-of-type(2){
 }
 div:nth-of-type(3){
     color: rgb(12, 34, 231);
+    font-size: 2em;
 }
 div:nth-of-type(4){
     color: rgb(20, 54, 17);
