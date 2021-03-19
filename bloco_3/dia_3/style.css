@@ -11,6 +11,8 @@
 .word{
     position:absolute;
     z-index:5;
+    left: 50px;
+    margin-top: 50px;
 }
 .baloon{
     position:absolute;
