@@ -11,12 +11,13 @@
 .word{
     position:absolute;
     z-index:5;
-    left: 50px;
-    margin-top: 50px;
+    left: 850px;
+    top: 130px;
 }
 .baloon{
     position:absolute;
     z-index: 4;
+    left: 800px;
 }
 .bowser{
     position: absolute;
