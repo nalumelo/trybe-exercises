@@ -12,3 +12,10 @@ ol li{
 }ol li:nth-child(even){
     color: green;
 }
+li:first-child,
+  li:nth-child(2n + 4),
+  li:nth-child(3n + 6),
+  li:nth-child(4n + 8),
+  li:nth-child(5n + 10){
+      text-transform:uppercase;
+  }
