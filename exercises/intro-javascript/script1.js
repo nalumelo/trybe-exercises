@@ -43,3 +43,7 @@ if (a+b+c == 180){
 } else {
     console.log(false)
 }
+
+//ex 6
+let peca;
+return peca.toLowerCase()
