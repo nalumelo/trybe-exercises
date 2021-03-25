@@ -111,3 +111,16 @@ if (n1 % 2 != 0 || n2 % 2 != 0 || n3 %2 != 0) {
 } else{
     console.log(false)
 }
+
+//ex 10
+let custo = 15;
+let valorVenda = 40;
+let custoTotal = custo + 0.2 * custo;
+let lucro = valorVenda - custoTotal;
+
+if (custo < 0 || valorVenda < 0) {
+    console.log("Erro")
+} else {
+    console.log("Lucro:",lucro)
+}
+console.log("Imposto do custo:",0.2*custo)
