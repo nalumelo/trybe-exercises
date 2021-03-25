@@ -45,5 +45,32 @@ if (a+b+c == 180){
 }
 
 //ex 6
-let peca;
-return peca.toLowerCase()
+let peca = "PAWN";
+let mov;
+
+switch (peca.toLowerCase()){
+    case "king":
+        mov = "Rei: vertical, horizontal e diagonal"
+        console.log(mov)
+        break;
+    case "queen":
+        mov = "Rainha: vertical, horizontal e diagonal"
+        console.log(mov)
+        break;
+    case "bishop":
+        mov = "Bispo: apenas diagonal"
+        console.log(mov)
+        break;
+    case "knight":
+        mov = "Cavalo: forma de L"
+        console.log(mov)
+        break;
+    case "rook":
+        mov = "Torre: vertical e horizontal"
+        console.log(mov)
+        break;
+    case "pawn":
+        mov = "Peão: frente e diagonal*"
+        console.log(mov)
+        break;
+}
