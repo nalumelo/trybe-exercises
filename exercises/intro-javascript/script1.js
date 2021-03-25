@@ -124,3 +124,35 @@ if (custo < 0 || valorVenda < 0) {
     console.log("Lucro:",lucro)
 }
 console.log("Imposto do custo:",0.2*custo)
+
+//ex 11
+let salario = 5200;
+let inss;
+let ir;
+
+if (salario <= 1556.94){
+    inss = salario * 0.8
+} else if (salario >= 1556.95 && salario <= 2594.92) {
+    inss = salario * 0.09
+} else if (salario >= 2594.93 && salario <= 5189.82) {
+    inss = salario * 0.11
+} else {
+    inss = 570.88
+}
+
+let salarioMedio = salario - inss
+
+if (salarioMedio <= 1903.98) {
+    ir = 0
+} else if (salarioMedio >= 1903.99 && salarioMedio <= 2826.65) {
+    ir = salarioMedio * 0.075 + 142.8
+} else if (salarioMedio >= 2826.66 && salarioMedio <= 3751.05) {
+    ir = salarioMedio * 0.15 + 354.8
+} else if (salarioMedio >= 3751.06&& salarioMedio <= 4664.68) {
+    ir = salarioMedio * 0.225 + 636.13
+} else {
+    ir = salarioMedio * 0.275 + 869.36
+}
+
+let salarioFinal = salarioMedio - ir;
+console.log(salarioFinal)
