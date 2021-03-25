@@ -74,3 +74,22 @@ switch (peca.toLowerCase()){
         console.log(mov)
         break;
 }
+
+//ex 7
+let suaNota = 45;
+
+if (suaNota < 0 || suaNota > 100) {
+    console.log("Nota inválida")
+} else if (suaNota >=90) {
+    console.log("A")
+} else if (suaNota >=80) {
+    console.log("B")
+} else if (suaNota >= 70) {
+    console.log("C")
+} else if (suaNota >= 60) {
+    console.log("D")
+} else if (suaNota >= 50) {
+    console.log("E")
+} else {
+    console.log("F")
+}
