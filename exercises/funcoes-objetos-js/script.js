@@ -63,3 +63,16 @@ function indiceDoMaior(numeros) {
 }
 
 indiceDoMaior([2,3,4,7,10,1]);
+
+//ex 3
+function indiceDoMenor(numeros) {
+  let menorIndice = 0;
+  for (let index in numeros) {
+    if (numeros[menorIndice] > numeros[index]) {
+      menorIndice = index;
+    }
+  }
+  return console.log(menorIndice);
+}
+
+indiceDoMenor([2,4,6,7,10,0,-3]);
