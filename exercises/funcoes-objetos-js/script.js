@@ -6,3 +6,7 @@ let info = {
 
 //ex 1
 console.log('Bem-vinda, ' + info.personagem);
+
+//ex 2
+info['recorrente'] = 'sim';
+console.log(info);
