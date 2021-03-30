@@ -50,3 +50,16 @@ function palindrome(string) {
 }
 
 palindrome('abelha');
+
+//ex 2
+function indiceDoMaior(numeros) {
+  let maiorIndex = 0;
+  for (let index in numeros) {
+    if (numeros[maiorIndex] < numeros[index]) {
+      maiorIndex = index;
+    }
+  }
+  return console.log(maiorIndex);
+}
+
+indiceDoMaior([2,3,4,7,10,1]);
