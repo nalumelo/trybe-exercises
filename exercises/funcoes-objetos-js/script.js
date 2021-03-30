@@ -76,3 +76,16 @@ function indiceDoMenor(numeros) {
 }
 
 indiceDoMenor([2,4,6,7,10,0,-3]);
+
+//ex 4
+function maiorNome(nomes) {
+  let bigName = [0];
+  for (let index in nomes) {
+    if (bigName.length < nomes[index].length) {
+        bigName = nomes[index];
+    }
+  }
+  return console.log(bigName);
+}
+
+maiorNome(['José','Lucas','Nádia','Fernanda','Cairo','Joana']);
