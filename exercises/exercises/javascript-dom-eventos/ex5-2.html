@@ -59,19 +59,24 @@
     <script>
       // COLOQUE SEU CÓDIGO AQUI
     //ex 1
-    let title = document.createElement('h1');
+    const title = document.createElement('h1');
     title.innerHTML = 'Exercício 5.2 - JavaScript DOM';
     document.body.appendChild(title);
 
     //ex 2
-    let main_content = document.createElement('div');
+    const main_content = document.createElement('div');
     main_content.className = 'main-content';
     document.body.appendChild(main_content);
 
     //ex 3
-    let center_content = document.createElement('div');
+    const center_content = document.createElement('div');
     center_content.className = 'center-content';
     document.main_content.appendChild(center_content);
+
+    //ex 4
+    const paragraph = document.createElement('p');
+    paragraph.innerHTML = 'Teste testinho testão';
+    document.center_content.appendChild(paragraph);
     </script>
   </body>
 </html>
