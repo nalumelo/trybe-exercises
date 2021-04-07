@@ -105,16 +105,21 @@
     }
 
     //ex 9
-    const h3_1 = document.createElement('h3');
-    main_content.appendChild(h3_1);
-    const h3_2 = document.createElement('h3');
-    main_content.appendChild(h3_2);
-    const h3_3 = document.createElement('h3');
-    main_content.appendChild(h3_3);
+    for (let index = 0; index <= 3; index += 1) {
+      const h3 = document.createElement('h3');
+      h3.innerHTML = 'Pow';
+      main_content.appendChild(h3);
+    }
 
     //2a parte
     //ex 1
     title.className = 'title';
+
+    //ex 2
+    const h3 = document.createElement('h3');
+    for (let index = 0; index < 3; index += 1) {
+      h3.className = 'description'
+    }
     </script>
   </body>
 </html>
