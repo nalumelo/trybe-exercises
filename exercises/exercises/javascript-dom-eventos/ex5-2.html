@@ -71,7 +71,7 @@
     //ex 3
     const center_content = document.createElement('div');
     center_content.className = 'center-content';
-   main_content.appendChild(center_content);
+    main_content.appendChild(center_content);
 
     //ex 4
     const paragraph = document.createElement('p');
@@ -122,7 +122,12 @@
     }
 
     //ex 3
-    main_content.removeChild(left_content);
+    const divLeftContent = document.getElementsByClassName('left-content')[0];
+    main_content.removeChild(divLeftContent);
+
+    //ex 4
+    const divRightContent = document.getElementsByClassName('right_content')[0];
+    divRightContent.style.marginRight = 'auto';
     </script>
   </body>
 </html>
