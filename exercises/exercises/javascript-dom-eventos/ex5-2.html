@@ -71,22 +71,28 @@
     //ex 3
     const center_content = document.createElement('div');
     center_content.className = 'center-content';
-    document.main_content.appendChild(center_content);
+   main_content.appendChild(center_content);
 
     //ex 4
     const paragraph = document.createElement('p');
     paragraph.innerHTML = 'Teste testinho testão';
-    document.center_content.appendChild(paragraph);
+    center_content.appendChild(paragraph);
 
     //ex 5
     const left_content = document.createElement('div');
     left_content.className = 'left-content';
-    document.main_content.appendChild(left_content);
+    main_content.appendChild(left_content);
 
     //ex 6
     const right_content = document.createElement('div');
     right_content.className = 'right-content';
-    document.main_content.appendChild(right_content);
+    main_content.appendChild(right_content);
+
+    //ex 7
+    const image = document.createElement('img');
+    image.className = 'small-image';
+    image.src = 'https://picsum.photos/200';
+    left_content.appendChild(image);
     </script>
   </body>
 </html>
