@@ -93,6 +93,16 @@
     image.className = 'small-image';
     image.src = 'https://picsum.photos/200';
     left_content.appendChild(image);
+
+    //ex 8
+    const list = document.createElement('ul');
+    right_content.appendChild(list);
+    const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+    for (let num in numbers) {
+      const listNum = document.createElement('li');
+      listNum.innerHTML = numbers[num];
+      list.appendChild(listNum);
+    }
     </script>
   </body>
 </html>
