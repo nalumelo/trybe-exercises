@@ -59,9 +59,9 @@
     <script>
       // COLOQUE SEU CÓDIGO AQUI
     //ex 1
-    const title = document.createElement('h1');
-    title.innerHTML = 'Exercício 5.2 - JavaScript DOM';
-    document.body.appendChild(title);
+    const h1 = document.createElement('h1');
+    h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+    document.body.appendChild(h1);
 
     //ex 2
     const main_content = document.createElement('div');
@@ -105,20 +105,21 @@
     }
 
     //ex 9
-    for (let index = 0; index <= 3; index += 1) {
+    for (let index = 1; index <= 3; index += 1) {
       const h3 = document.createElement('h3');
-      h3.innerHTML = 'Pow';
+      h3.innerHTML = 'Pow' + index;
       main_content.appendChild(h3);
     }
 
     //2a parte
     //ex 1
+    const title = document.getElementsByTagName('h1')[0];
     title.className = 'title';
 
     //ex 2
-    const h3 = document.createElement('h3');
+    const h3 = document.getElementsByTagName('h3');
     for (let index = 0; index < 3; index += 1) {
-      h3.className = 'description'
+      h3[index].className = 'description';
     }
 
     //ex 3
@@ -132,6 +133,10 @@
     //ex 5
     const divCenterContent = document.getElementsByClassName('center-content')[0];
     divCenterContent.parentNode.style.backgroundColor = 'green';
+
+    //ex 6
+    list.lastChild.remove();
+    list.lastChild.remove();
     </script>
   </body>
 </html>
