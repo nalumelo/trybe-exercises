@@ -11,6 +11,7 @@
     <h1>Forms</h1>
   <form method="GET">
     <fieldset>
+        <h2>Dados pessoais</h2>
       <label for="input-nome">Nome:
         <input type="text" required maxlength="40" id="input-nome">
       </label> <br><br>
@@ -34,6 +35,11 @@
       </label>
       <label for="ap">
         <input type="radio" id="ap" name="tipo"> Apartamento
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="resumo-curriculo">Resumo do currículo:<br>
+        <textarea id="resumo-curriculo" cols="30" rows="10" maxlength="1000" style="max-width: 350px; max-height: 250px;"></textarea>
       </label>
     </fieldset>
   </form>
