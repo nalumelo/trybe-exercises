@@ -34,15 +34,18 @@
         <input type="radio" id="input-casa" name="tipo" required> Casa
       </label>
       <label for="ap">
-        <input type="radio" id="ap" name="tipo"> Apartamento
+        <input type="radio" id="ap" name="tipo" required> Apartamento
       </label>
     </fieldset>
     <fieldset>
       <label for="resumo-curriculo">Resumo do currículo:<br>
         <textarea id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required style="max-width: 350px; max-height: 250px;"></textarea>
       </label><br><br>
-      <label>Cargo:
-        <input type="text" required maxlength="40">
+      <label for="cargo">Cargo:
+        <input id="cargo" type="text" required maxlength="40">
+      </label><br><br>
+      <label for="desc-cargo">Descrição do cargo:
+        <input type="text" id="desc-cargo" required maxlength="500">
       </label>
     </fieldset>
   </form>
