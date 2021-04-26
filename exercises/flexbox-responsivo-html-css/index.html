@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link type="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Forms</h1>
+  <form method="GET">
+    <fieldset>
+        <h2>Dados pessoais</h2>
+      <label for="input-nome">Nome:
+        <input type="text" required maxlength="40" id="input-nome">
+      </label> <br><br>
+      <label for="input-email">E-mail:
+        <input type="text" required maxlength="50" id="input-email">
+      </label> <br><br>
+      <label for="input-cpf">CPF:
+        <input type="text" required maxlength="11" id="input-cpf">
+      </label> <br><br>
+      <label for="input-endereco">Endereço:
+        <input type="text" required maxlength="200" id="input-enderco">
+      </label> <br><br>
+      <label for="input-cidade">Cidade:
+        <input type="text" required maxlength="28" id="input-cidade">
+      </label> <br><br>
+      <label for="select-estado">Estado:
+        <select required id="select-estado" value= ""></select>
+      </label><br><br>
+      <label for="input-casa">Tipo:
+        <input type="radio" id="input-casa" name="tipo" required> Casa
+      </label>
+      <label for="ap">
+        <input type="radio" id="ap" name="tipo" required> Apartamento
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="resumo-curriculo">Resumo do currículo:<br>
+        <textarea id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required style="max-width: 350px; max-height: 250px;"></textarea>
+      </label><br><br>
+      <label for="cargo">Cargo:
+        <input id="cargo" type="text" required maxlength="40">
+      </label><br><br>
+      <label for="desc-cargo">Descrição do cargo:
+        <input type="text" id="desc-cargo" required maxlength="500">
+      </label>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
