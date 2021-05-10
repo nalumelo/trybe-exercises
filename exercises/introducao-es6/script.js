@@ -1,3 +1,4 @@
+// parte 1
 // ex 1
 const testingScope = (escopo) => {
   if (escopo === true) {
@@ -29,3 +30,20 @@ const sortt = () => {
 
 const sortedArray = sortt();
 console.log(`Os números ${sortedArray} estão ordenados`);
+
+//parte 2
+//ex 1
+const fatorial = num => {
+  let fat = 1
+  for (let i = 2; i <= num; i += 1) {
+    fat *= i;
+  }
+  return fat;
+}
+
+console.log(fatorial(5));
+
+// ex 2
+const contaLetra = frase => {
+  
+}
